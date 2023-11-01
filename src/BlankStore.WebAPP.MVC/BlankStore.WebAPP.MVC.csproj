@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-BlankStore.WebAPP.MVC-c3f192b0-a1d4-4c34-950e-ec8e2efd771e</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR" Version="12.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlankStore.Catalogo.Application\BlankStore.Catalogo.Application.csproj" />
+    <ProjectReference Include="..\BlankStore.Catalogo.Data\BlankStore.Catalogo.Data.csproj" />
+    <ProjectReference Include="..\BlankStore.Catalogo.Domain\BlankStore.Catalogo.Domain.csproj" />
+    <ProjectReference Include="..\BlankStore.Core\BlankStore.Core.csproj" />
+    <ProjectReference Include="..\BlankStore.Vendas.Application\BlankStore.Vendas.Application.csproj" />
+  </ItemGroup>
+
+</Project>
